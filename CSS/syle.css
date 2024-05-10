@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+*::selection{
+    background: #006241;
+    color: #fff;
+}
+img{
+    width: 25px;
+}
+
+.header{
+    background: #006241;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.75);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+    
+  
+
+.header__logo{
+    width: 30px;
+}
+.header__container-login{
+    display: none;
+}
+.header__nav, .header__user{
+    display: none;
+}
+
+.header__container-login-mobile i{
+    color: #fff;
+    font-size: 25px;
+}
+.main__container-logo{
+    display: none;
+}
+.main{
+    margin-top: 80px;
+    padding: 15px 15px 60px;
+    display: flex;
+}
+.main__title{
+    font-size: 50px;
+    line-height: 1.2;
+}
+.main__title span{
+    color: #006241;
+}
+.main__description{
+    font-weight: bolder;
+    margin-top: 20px;
+}
+.main__container-text{
+    display: flex;
+    flex-direction: column;
+}
+.gallery{
+    background: #006241;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gallery__img{
+    width: 75%;
+    margin-top: 15px;
+}
+.contact{
+    background: #0e0e0e;
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact__title{
+    color: #006241;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.contact__form{
+    background: #006241;
+    padding: 15px;
+    color: #fff;
+    width: 280px;
+}
+.contact__input label{
+    font-size: 14px;
+}
+.contact__input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+
+}
+.contact__input input::placeholder, 
+.contact__input textarea::placeholder{
+    font-size: 12px;
+    color: #006241;
+    font-weight: bolder;
+
+}
+.contact__input input, 
+.contact__input textarea{
+    padding: 5px;
+    border-radius: 7.5px;
+    border: 0;
+}
+.contact__input input:focus, 
+.contact__input textarea:focus{
+    background: #000;
+}
+.contact__btn{
+    background: inherit;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 45%;
+    margin-top: 20px;
+    border-radius:7.55px;
+    padding: 4px 0;
+    transition: all 0.5s;
+}
+.contact__btn:hover {
+    background: yellow;
+    border: 1px solid yellow;
+}
+.cards__card{
+    background: #006241;
+    margin-top: 45px;
+    color: #fff;
+    position: relative;
+    width: 85%;
+}
+.cards{
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.cards__card-img{
+    width: 100%;
+}
+.cards__card-title span{
+    color: yellow;
+}
+.cards__card-cotainer-text{
+    padding: 25px 15px;
+}
+.cards__card-description{
+    font-size: 14px;
+    margin: 7.5px 0;
+}
+.cards__card-btn{
+    background: inherit;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 120px;
+    margin-top: 20px;
+    border-radius:7.5px;
+    padding: 5px 30px;
+    font-size: 13px;
+    transition: all 0.5s;
+    text-decoration: none;
+    margin-bottom: 15px;
+
+}
+.cards__card-btn:hover{
+    background: yellow;
+    border: 1px solid yellow;
+}
+.cards__container-btn{
+    display: flex;
+    flex-direction: column;
+}
+.cards__container-btn a {
+    width: 100%;
+    margin: 7.5px 0 0;
+    text-align: center;
+}
+.cards__card-circle{
+    background: yellow;
+    width: 65px;
+    height: 65px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+}
+.footer{
+    background: #000;
+    padding: 25px 15px;
+}
+.footer__container-user{
+    display: flex;
+    flex-direction: column;
+}
+.footer__link-user{
+    color: #006241;
+    text-decoration: none;
+    font-size: 20px;
+}
+.footer__container-social{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__container-social i{
+    color: #006241;
+    font-size: 22px;
+}
+.footer_container-contact a{
+    text-decoration: none;
+    color: #04a01b;
+}
+
+@media (min-width: 768px){
+    .header__container-login-mobile{
+        display: none;
+    }
+    .header__container-login{
+        display: block;
+    }
+    .header__container-login i {
+        color: white;
+        font-size: 28px;
+    }
+    .header__nav{
+        display: block;
+    }
+    .header__nav-link{
+        text-decoration: none;
+        color: #fff;
+        margin-left: 15px;
+    }
+    .main__container-logo{
+        display: block;
+    }
+    .main__logo{
+        width: 80%;
+    }
+    .main__container-text{
+        width: 50%;
+    }
+    .main__container-logo{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .main{
+        display: flex;
+        padding: 15px 30px 60px;
+    }
+    .gallery{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .gallery__img{
+        width: 30%;
+        margin-top: 0;
+
+    }
+    .contact__form{
+        width: 400px;
+    }
+    .cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .cards__card{
+        width: 40%;
+        height: 400px;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+@media(min-width: 1024px){
+    .main__logo{
+        width: 350px;
+    }
+    .main{
+        display: flex;
+        padding: 15px 100px 60px;
+    }
+    .gallery__img{
+        width: 300px;
+        margin-top: 0;
+        margin-left: 25px;
+
+    }
+    .cards__card{
+        width: 450px;
+        height: 500px;
+        margin: 25px 50px;
+    }
+    .gallery{
+        justify-content: center;
+    }
+    .contact__form{
+        width: 800px;
+    }
+    .contact__input label{
+        font-size: 17px;
+    }
+     .cards__container-btn{
+        flex-direction: row;
+    }
+    .cards__container-btn a{
+        margin-left: 7.5px;
+    }
+    .footer{
+        height: 250px;
+        align-items: center;
+    }
+
+}

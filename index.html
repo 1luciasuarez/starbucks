@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Starbucks</title>
+    <meta name="keywords" content="Starbucks, bebida"/>
+    <meta name="author" content="Lucia Suarez"/>
+    <link rel="icon" href="./images/logo.png"/>
+    <link rel="stylesheet" href="./CSS/syle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    
+
+</head>
+<body>
+    <header class="header">
+        <div class="header__container-logo">
+            <img class="header__logo" src="./images/logo.png" alt="logo"/>
+        </div>
+        <nav class="header__nav">
+            <a class="header__nav-link" href="#">INICIO</a>
+            <a class="header__nav-link" href="#">CAFE</a>
+            <a class="header__nav-link" href="#">SOBRE NOSOTROS</a>
+            <a class="header__nav-link" href="#">DELIVERY</a>
+        </nav>
+        <div class="header__container-login">
+            <i class="bi bi-person-circle"></i>
+        </div>
+        <div class="header__container-login-mobile">
+            <i class="bi bi-list"></i>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__container-text">
+            <h1 class="main__title">No solo es Cafe es <span>Starbucks</span></h1>
+            <p class="main__description"> Cada día, acudimos a trabajar con la esperanza de conseguir dos cosas: compartir el mejor café con nuestros amigos y contribuir a que el mundo sea un poco mejor. Asi era cuando abrió la primer tienda de Starbucks en 1971, y asi continúa siendo hoy.</p>
+
+        </div>
+        <div class="main__container-logo">
+            <img  class="main__logo" src="./images/logo.png" alt="logo  starbucks main"/>
+        </div>
+    </main>
+    <section class="gallery">
+        <img class="gallery__img" src="./images/gallery-1.png" alt="imagen 1 galeria"/>
+        <img class="gallery__img" src="./images/gallery-2.png" alt="imagen 2 galeria" />
+        <img class="gallery__img" src="./images/gallery-3.png" alt="imagen 3 galeria"/>
+    </section>
+    <section class="contact">
+        <h2 class="contact__title">CONTACTANOS</h2>
+        <form class="contact__form">
+            <div class="contact__input">
+                <label>Correo Electronico</label>
+                <input placeholder="Ingrese su correo electrónico" type="email" required />
+            </div>
+            <div class="contact__input">
+                <label>Comentario</label>
+                <textarea placeholder="Ingrese su comentario" required></textarea>
+            </div>
+            <button class="contact__btn" type="submit">Enviar</button>
+        </form>
+    </section>
+    <section class="cards">
+        <article class="cards__card">
+            <div class="cards__card-circle">5%</div>
+            <img class="cards__card-img" src="./images/card-1.png" alt="imagen card 1" />
+            <div class="cards__card-cotainer-text">
+                <h3 class="cards__card-title">Aplicacion de <span>Starbucks</span></h3>
+                <p class="cards__card-description">Ahorre tiempo con click & collect y recolecte sus estrellas.
+                    Hacer pedido nuca ha sido tan facil.</p>
+                    <a class="cards__card-btn">Pruebalo</a>
+            </div>
+
+        </article>
+        <article class="cards__card">
+            <div class="cards__card-circle">10%</div>
+            <img class="cards__card-img" src="./images/card-2.png" alt="imagen card 2" />
+            <div class="cards__card-cotainer-text">
+            <h3 class="cards__card-title"><span>Starbucks</span> Delivery
+            </h3>
+            <p class="cards__card-description">Starbucks entrega su comida y bebida favorita en la puerta de su casa.</p>
+            <div class="cards__container-btn">
+                <a class="cards__card-btn" href="#">Entrega por UberEats</a>
+                <a class="cards__card-btn" href="#">Entrega por PedidosYa</a>
+            </div>
+            </div>
+        </article>
+        <article class="cards__card">
+            <img  class="cards__card-img" src="./images/card-3.png" alt="imagen card 3" />
+            <div class="cards__card-cotainer-text">
+            <h3 class="cards__card-title">Novedades <span>Starbucks</span></h3>
+            <p class="cards__card-description">Mantengase informado de nuestras ultimas novedades y actualizaciones.</p>
+            <button class="cards__card-btn">Más información</button>    
+        </div>
+    </article>
+        <article class="cards__card">
+            <img  class="cards__card-img" src="./images/card-4.png" alt="imagen card 4" />
+            <div class="cards__card-cotainer-text">
+            <h3 class="cards__card-title">Historias <span>Starbucks</span></h3>
+            <p class="cards__card-description">Descubra nuestra empresa y nuestro</p>
+            <button class="cards__card-btn">Más información</button>
+            </div>
+        </article>
+    </section>
+    <footer class="footer">
+        <div class="footer__container-user">
+            <a class="footer__link-user" href="#">Iniciar sesion</a>
+            <a class="footer__link-user" href="#">Registrarse</a>
+        </div>
+        <div class="footer__container-social">
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter-x"></i>
+        </div>
+        <div class="footer_container-contact">
+            <a class="footer__link-social" href="#">Contactanos aqui</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
